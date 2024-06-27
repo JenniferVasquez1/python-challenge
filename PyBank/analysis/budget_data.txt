@@ -1,0 +1,7 @@
+Financial Analysis 
+---------------------------------------------------- 
+Total Months: 86 
+Total: 1088983 
+Monthly Average: -836333.4117647059 
+Greatest Increase: Mar-13 ($52857) 
+Greatest Decrease: Dec-10 ($-2283116) 
