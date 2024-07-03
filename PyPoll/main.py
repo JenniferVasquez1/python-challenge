@@ -1,5 +1,5 @@
-
 import csv
+import os
 
 #Initialize Variables
 total_votes = 0
@@ -8,18 +8,16 @@ candidate_votes = {}
 candidate = " "
 
 #Defining the CSV file path
-csv_file_path = 'PyPoll/Resources/election_data.csv'
+election_data_csv = os.path.join("Resources","election_data.csv")
 
 #Read the CSV file line bt line
+with open(election_data_csv) as data:
+    reader = csv.reader(data)
 
-with open(csv_file_path, "r") as csvfile:
-    csvreader = csv.reader(csvfile, delimiter=',')
-
-    #Skipping the header row
-    next(csvreader, None)
+    heading = next(reader)
 
     #Looping over each row in the CSV file to retrive the data 
-    for row in csvreader:
+    for row in reader:
         try:
             voter_id = row[0]
             county = row[1]
@@ -65,7 +63,7 @@ print("Winner: ", winners[0])
 print("-------------------------")
 
 #Write our analysis results into a txt file
-with open("PyPoll/analysis/election_analysis.txt", "w") as txtfile:
+with open("analysis/election_analysis.txt", "w") as txtfile:
      txtfile.write("Election Results\n")
      txtfile.write("-------------------------\n")
      txtfile.write(f"Total Votes: {total_votes}\n")
