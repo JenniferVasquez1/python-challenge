@@ -1,32 +1,41 @@
-I worked with a tutor and class materials to come up with the code to complete this challenge
+# Python Challenge
+![MIT](https://img.shields.io/badge/License-MIT-blue)
 
 
-PyBank
-In this Challenge, you are tasked with creating a Python script to analyze the financial records of your company. You will be given a financial dataset called budget_data.csv. The dataset is composed of two columns: "Date" and "Profit/Losses".
 
-Your task is to create a Python script that analyzes the records to calculate each of the following values:
+## Description
+Created a Python script to analyze the financial records of your company
 
-The total number of months included in the dataset
+![app_image](mockup.png)
 
-The net total amount of "Profit/Losses" over the entire period
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+- [Features](#features)
+- [Tests](#tests)
+- [Contact](#contact)
 
-The changes in "Profit/Losses" over the entire period, and then the average of those changes
+## Installation
+python, csv library
 
-The greatest increase in profits (date and amount) over the entire period
+## Usage
+Run main.py file in PyPoll and PyBank directories
 
-The greatest decrease in profits (date and amount) over the entire period
+## Credits
+Jennifer Harris
 
-PyPoll
-In this Challenge, you are tasked with helping a small, rural town modernize its vote-counting process.
+## License
+MIT
 
-You will be given a set of poll data called election_data.csv. The dataset is composed of three columns: "Voter ID", "County", and "Candidate". Your task is to create a Python script that analyzes the votes and calculates each of the following values:
+## Features
+Provides summary of election and budget data
 
-The total number of votes cast
+## Tests
+Confirm that the budget and poll files are created. confirm that the .txt file is recorded
 
-A complete list of candidates who received votes
-
-The percentage of votes each candidate won
-
-The total number of votes each candidate won
-
-The winner of the election based on popular vote
+## Contact
+If there are any questions of concerns, I can be reached at:
+##### [github: mrslinton](https://github.com/mrslinton)
+##### [email: jennifer.v.harris@outlook.com](mailto:jennifer.v.harris@outlook.com)
